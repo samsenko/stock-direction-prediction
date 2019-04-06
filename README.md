@@ -44,3 +44,24 @@ when considering that the p-values may be inflated due to the very small samples
 6. Precisions on downward predictions of our model predicting 1 week ahead against a model predicting randomly (p < 0.01)
 7. Precisions on downward predictions of our model predicting 1 week ahead against a model predicting always down (p < 0.01)
 8. Precisions on downward predictions of our model predicting 1 week ahead against a model predicting based on trend (p = 0.13)
+
+Based on this, I conclude that the model is clearly better than randomly guessing both at predicting upward and downward movement in 
+stocks and across various time periods (including over only 1 week). Additionally, the model shows clear evidence of consistently 
+outperforming slightly more sophisticated methods based on trend in moving average over short time periods (ie. 1 week). Finally, it is
+not yet clear whether the model would consistently outperform these slightly more sophisticated models consistently over longer time
+periods.
+
+## Files in this Repository
+This repository contains a Jupyter Notebook called Stock_Direction_Prediction.ipynb which contains the code for feature engineering, model 
+training, model assessment and a function called predict which allows you to predict the direction of a stock's movement. 
+
+This repository also contains both five year data and ten year data (used only for assessment) for each of the companies we were trying to
+predict. The companies are all major tech companies (Apple, Google, Facebook, Blackberry, Microsoft, IBM and Samsung). Blackberry in 
+particular was included to increase the diversity of the data by adding a company whose stock price has not consistently increased over
+the past ten years. Data was collected from Yahoo Finance.
+
+## Future Work
+The model could likely be improved by further tuning of the many hyperparameters (FEATURES, JUMP, MEAN_LENGTH, N_COMPONENTS, C and gamma).
+Additionally, adding more features than just lag variable derived from the moving average-smoothed data may improve the accuracy of the 
+model. Finally, increasing the amount of data both so as to increase the sample size on the significance tests and to allow for the
+prediction of more companies would likely be beneficial.
