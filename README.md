@@ -2,7 +2,7 @@
 
 ## Summary
 This repository contains code to train and run a model used to predict the direction a stock from a particular list of large tech 
-companies will move over the next week and over the next quarter. The model first smoothes the data for each company by replacing the
+companies will move over the next week and over the next quarter. The model first smooths the data for each company by replacing the
 datapoints with moving averages over a user-defined amount of days (set by the variable MEAN_LENGTH). The problem is then converted into 
 a supervised learning problem by using lag variables derived from the smoothed data. The lag variables will skip a user-defined number of
 days between each feature (set by the variable JUMP) and will go back a user-defined number of days (set by the variable FEATURES). The 
@@ -11,12 +11,12 @@ data is then scaled and the dimensionality of the data is reduced via PCA. Then,
 use a Gradient Boosting Classifier.
 
 ## Model Assessment
-The model was tested both for predictions 1 week ahead and for its predictions 1 quarter ahead. In both cases, both the models precisions
+The model was tested both for predictions 1 week ahead and for its predictions 1 quarter ahead. In both cases, both the model's precisions
 at predicting upward movements and its precisions at predicting downward movements were assessed. The model was compared to three different
 models in each of these cases: a random model, a model which always predicts that the stock moves in the direction in question and a model
 which predicts according to the trend of the smoothed data. To test our model against each of these models, all of the models were tested
-on their prediction in each year for the past 5 years. For our model, for each new test set we retrained it on the four years prior to the
-test set. The relevant precisions were then calculated for each model and stored in a Numpy array after which a non-parametric F-test was 
+on their predictions on each year for the past 5 years. For our model, for each year we retrained it on the four years prior to that
+year. The relevant precisions were then calculated for each model and stored in a Numpy array after which a non-parametric F-test was 
 used to compare the models.
 
 This method has a couple of advantages. Firstly, by using a statistical hypothesis test, we can not only see which model is more accurate
@@ -47,9 +47,9 @@ when considering that the p-values may be inflated due to the very small samples
 
 Based on this, I conclude that the model is clearly better than randomly guessing both at predicting upward and downward movement in 
 stocks and across various time periods (including over only 1 week). Additionally, the model shows clear evidence of consistently 
-outperforming slightly more sophisticated methods based on trend in moving average over short time periods (ie. 1 week). Finally, it is
-not yet clear whether the model would consistently outperform these slightly more sophisticated models consistently over longer time
-periods.
+outperforming slightly more sophisticated methods based on trend in moving average when predicting movements over short time periods (ie. 
+1 week). Finally, it is not yet clear whether the model would consistently outperform these slightly more sophisticated models when 
+predicting movements over longer time periods.
 
 ## Files in this Repository
 This repository contains a Jupyter Notebook called Stock_Direction_Prediction.ipynb which contains the code for feature engineering, model 
