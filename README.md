@@ -47,7 +47,7 @@ We did, however, find some (occasionally weak) statistical evidence that our mod
 Based on this, I conclude that the model is clearly better than randomly guessing both at predicting upward and downward movement in 
 stocks and across various time periods (including over only 1 week). Additionally, the model shows some evidence that it would consistently 
 outperform slightly more sophisticated methods based on trend in moving average when predicting movements over short time periods (ie. 
-1 week). Finally, it is not clear whether the model would consistently outperform these slightly more sophisticated models when 
+1 week), although this evidence is not conclusive. Finally, it is not clear whether the model would consistently outperform these slightly more sophisticated models when 
 predicting movements over longer time periods.
 
 ## Files in this Repository
