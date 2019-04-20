@@ -33,8 +33,7 @@ no statistical significance to this result in the following scenarios:
 3. Precisions on downward predictions of our model predicting 1 quarter ahead against a model predicting based on the trend (p = 1.0)
 4. Precisions on upward predictions of our model predicting 1 week ahead against a model predicting always up (p = 0.5)
 
-We did, however, find some statistical evidence that our model was consistently outperforming other models in some situations, especially
-when considering that the p-values may be inflated due to the very small samples size of N = 6. These are the following scenarios:
+We did, however, find some (occasionally weak) statistical evidence that our model was consistently outperforming other models in some situations, especially when considering the small number of samples. These are the following scenarios:
 
 1. Precisions on upward predictions of our model predicting 1 quarter ahead against a model predicting randomly (p < 0.01)
 2. Precisions on downward predictions of our model predicting 1 quarter ahead against a model predicting randomly (p = 0.05)
@@ -46,9 +45,9 @@ when considering that the p-values may be inflated due to the very small samples
 8. Precisions on downward predictions of our model predicting 1 week ahead against a model predicting based on trend (p = 0.13)
 
 Based on this, I conclude that the model is clearly better than randomly guessing both at predicting upward and downward movement in 
-stocks and across various time periods (including over only 1 week). Additionally, the model shows clear evidence of consistently 
-outperforming slightly more sophisticated methods based on trend in moving average when predicting movements over short time periods (ie. 
-1 week). Finally, it is not yet clear whether the model would consistently outperform these slightly more sophisticated models when 
+stocks and across various time periods (including over only 1 week). Additionally, the model shows some evidence that it would consistently 
+outperform slightly more sophisticated methods based on trend in moving average when predicting movements over short time periods (ie. 
+1 week). Finally, it is not clear whether the model would consistently outperform these slightly more sophisticated models when 
 predicting movements over longer time periods.
 
 ## Files in this Repository
