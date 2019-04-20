@@ -63,4 +63,4 @@ the past ten years. Data was collected from Yahoo Finance.
 The model could likely be improved by further tuning of the many hyperparameters (FEATURES, JUMP, MEAN_LENGTH, N_COMPONENTS, C and gamma).
 Additionally, adding more features than just lag variable derived from the moving average-smoothed data may improve the accuracy of the 
 model. Finally, increasing the amount of data both so as to increase the sample size on the significance tests and to allow for the
-prediction of more companies would likely be beneficial.
+prediction of more companies would be beneficial.
