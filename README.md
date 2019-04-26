@@ -19,4 +19,4 @@ This repository also contains ten year data for each of the companies we were tr
 Blackberry in particular was included to increase the "diversity" of the data by adding a company whose stock price has not consistently increased over the past ten years. Data was collected from Yahoo Finance.
 
 ## Future Work
-One might attempt to build this model into a portfolio management or stock pricing model. This could be done either directly or incorporating the model into classical techniques (for example, one could design a binomial options pricing model in which the probabilities of upward and downward movements are predicted by our model).
+One might attempt to incorporate this model into a portfolio management or stock or option pricing model. This could be done either directly or combining this model with classical techniques (for example, one could design a binomial options pricing model in which the probabilities of upward and downward movements are predicted by our model).
