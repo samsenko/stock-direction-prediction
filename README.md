@@ -16,4 +16,4 @@ training, model assessment and a function called predict_direction which allows 
 This repository also contains ten year data for various companies. The companies are all major tech companies (Apple, Google, Facebook, Blackberry, Microsoft, IBM and Samsung). Data was collected from Yahoo Finance.
 
 ## Future Work
-Even though the model clearly outperforms the baseline on the data it was tested on, the model was tested on few stocks and there is no guarantee of its accuracy generalizing to the future. It would be beneficial, therefore, to test it on more data. In the future, it would also be interesting to attempt to incorporate this model into an algorithmic trading model either directly or, perhaps more likely, by combining it with other models in quantitative finance.
+Even though the model clearly outperforms the baseline on the data it was tested on, the model was tested on few stocks and there is no guarantee of its accuracy generalizing to the future. It would be beneficial, therefore, to test it on more data. 
